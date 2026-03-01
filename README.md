@@ -38,7 +38,7 @@ A centralized security monitoring setup using:
 
 **Focus:** Detect root usage and IAM configuration changes.
 
-📁 **Project Folder:** [aws-security-monitoring](./aws-security-monitoring)
+📁 **Project Folder:** [aws-security-monitoring](./aws-security-monitoring/README.md)
 
 ---
 
