@@ -1,96 +1,112 @@
-# aws-security-monitoring
-Multi-region AWS security monitoring architecture using CloudTrail, CloudWatch Logs, metric filters, and SNS-based alerting.
+# AWS Cloud Portfolio
+
+This repository contains a collection of hands-on AWS cloud and security projects 
+designed to demonstrate practical engineering skills in networking, monitoring, 
+identity management, and threat detection.
+
+Each project focuses on real-world architecture design, security controls, 
+and production-oriented implementation rather than simple tutorials.
 
 ---
 
-## 📌 Architecture Overview
+## 📂 Portfolio Structure
 
-This project implements a security monitoring baseline in AWS to detect and alert on critical account activities.
+Each project includes:
 
-### Core Components
-
-- **Amazon EC2** (inside custom VPC)
-- **Security Groups**
-- **Public & Private Subnets**
-- **AWS CloudTrail (Multi-Region)**
-- **Amazon S3 (centralized log storage)**
-- **CloudWatch Logs**
-- **Metric Filters**
-- **CloudWatch Alarms**
-- **SNS Email Notifications**
+- 🏗 Architecture Overview (core components & design decisions)
+- 🖼 Architecture Diagram
+- 🔐 Security Controls Implemented
+- 🛡 Security Best Practices Applied
+- 🚀 Future Improvements
+- 🧠 Skills Demonstrated
+- 📁 Repository Structure
+- 📖 About the Project
 
 ---
 
-## 🏗 Architecture Diagram
+## 🔎 Projects
 
-<img width="1492" height="982" alt="AWS Security Monitoring Architecture (CloudTrail + CloudWatch + SNS) drawio" src="https://github.com/user-attachments/assets/f3d6151c-8ae8-419d-98e5-0610e037b223" />
+### 1️⃣ AWS Security Monitoring Architecture
+A centralized security monitoring setup using:
 
+- AWS CloudTrail (Multi-Region)
+- Amazon S3 (Encrypted Log Storage)
+- CloudWatch Logs
+- Metric Filters
+- CloudWatch Alarms
+- SNS Email Notifications
 
-## 🔎 Security Controls Implemented
+**Focus:** Detect root usage and IAM configuration changes.
 
-### 1️⃣ Root Account Login Detection
-- CloudWatch Metric Filter: `RootLogin`
-- Alarm triggers when root login occurs
-- SNS notification sent immediately
-
-### 2️⃣ IAM Changes Monitoring
-- Detects IAM policy modifications
-- Alerts on user/role/permission changes
-
-### 3️⃣ Multi-Region Logging
-- CloudTrail enabled across all regions
-- Log file validation enabled
-- Encrypted S3 log storage (SSE-S3)
+📁 `aws-security-monitoring/`
 
 ---
 
-## 🔐 Security Best Practices Applied
+### 2️⃣ AWS SIEM Lab (In Progress)
+Centralized log ingestion and threat detection using:
 
-- Block Public Access on S3 bucket
-- Server-side encryption enabled
-- Multi-region CloudTrail
-- Log validation enabled
-- Least-privilege IAM role for EC2
-- CloudWatch log retention configured
+- CloudTrail
+- VPC Flow Logs
+- GuardDuty
+- OpenSearch / Athena
+- Detection Dashboards
+
+📁 `aws-siem-lab/`
 
 ---
 
-## 🚀 Future Improvements
+### 3️⃣ AWS Network Security Architecture (Planned)
+Secure VPC architecture including:
 
-- GuardDuty integration
-- AWS Config compliance rules
-- VPC Flow Logs monitoring
-- Security Hub integration
-- KMS CMK encryption instead of SSE-S3
-- Terraform IaC version
+- Public & Private Subnets
+- Security Groups
+- IAM Roles (no access keys)
+- SSM-based access model
+
+📁 `aws-network-security/`
+
+---
+
+## 🛡 Security Principles Applied Across Projects
+
+- Least Privilege IAM
+- No long-term access keys
+- Encrypted storage (SSE-S3 / KMS)
+- Centralized logging
+- Multi-region monitoring
+- Automated alerting
+- Public access restrictions
+- Security-first architecture design
 
 ---
 
 ## 🧠 Skills Demonstrated
 
 - AWS Security Architecture
-- Incident Detection Design
+- Threat Detection Engineering
 - CloudTrail & Log Analysis
-- CloudWatch Monitoring
-- Metric Filter Creation
-- Alarm & Notification Design
-- IAM Security Hardening
-- Multi-Region Security Strategy
+- CloudWatch Monitoring & Alerting
+- IAM Hardening
+- Secure VPC Design
+- Incident Detection & Response Logic
+- Security Best Practices Implementation
 
 ---
 
-## 📎 Repository Structure
-[AWS Security Monitoring Architecture (CloudTrail + CloudWatch + SNS).drawio](https://github.com/user-attachments/files/25316151/AWS.Security.Monitoring.Architecture.CloudTrail.%2B.CloudWatch.%2B.SNS.drawio) # Editable diagram file
+## 🚀 Roadmap
 
+Future additions to this portfolio:
 
-<img width="1492" height="982" alt="AWS Security Monitoring Architecture (CloudTrail + CloudWatch + SNS) drawio" src="https://github.com/user-attachments/assets/ed68a257-58df-40ef-a9f2-40274a9e2b47" /> # Exported diagram image
+- GuardDuty Integration
+- AWS Security Hub
+- AWS Config Compliance Monitoring
+- Infrastructure as Code (Terraform)
+- Multi-Account Security Architecture
+- DevSecOps CI/CD Security
 
+---
 
 ## 📬 About
 
-This project is part of my transition into Cloud & Security Engineering, 
-focused on practical AWS security architecture implementation.
-
-
-
-
+This portfolio was created to demonstrate hands-on AWS cloud engineering 
+and security implementation skills through practical architecture projects.
