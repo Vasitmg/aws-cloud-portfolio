@@ -38,7 +38,7 @@ A centralized security monitoring setup using:
 
 **Focus:** Detect root usage and IAM configuration changes.
 
-📁 `aws-security-monitoring/`
+📁 **Project Folder:** [aws-security-monitoring](./aws-security-monitoring)
 
 ---
 
@@ -51,7 +51,7 @@ Centralized log ingestion and threat detection using:
 - OpenSearch / Athena
 - Detection Dashboards
 
-📁 `aws-siem-lab/`
+📁 **Project Folder:** [aws-siem-lab](./aws-siem-lab)
 
 ---
 
