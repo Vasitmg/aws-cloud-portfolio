@@ -51,7 +51,7 @@ Centralized log ingestion and threat detection using:
 - OpenSearch / Athena
 - Detection Dashboards
 
-📁 **Project Folder:** [aws-siem-lab](./aws-siem-lab)
+📁 **Project Folder:** [aws-siem-lab](./aws-siem-lab/README.md)
 
 ---
 
